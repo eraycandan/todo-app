@@ -1,0 +1,83 @@
+@import 'bootstrap/scss/bootstrap';
+
+$text-color: #000; // Yazı rengi
+$place-text-color: #6c757d; // Yazı rengi
+$box-color: lightgrey;
+
+$icon-color-first: #6c757d;
+$icon-color-second: #0dcaf0;
+
+
+body {
+    --bs-body-color: #{$text-color};
+}
+
+// ----------------------------------------------------- CREATE PLACEHOLDER
+input::placeholder,
+textarea::placeholder {
+    color: $place-text-color !important; // Gri renk
+    font-style: italic; // İtalik yazı tipi
+    font-size: 14px; // Font boyutu
+}
+
+// ----------------------------------------------------- CREATE FORM
+input.form-control,
+textarea.form-control {
+    border: none; // Genel border (gri)
+    border-bottom: 3px solid lightgrey;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+
+    &:focus {
+        border: none;
+        border-bottom: 3px solid #ffc107;
+        border-radius: 0;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+// ----------------------------------------------------- TODOLIST
+.todoListBox {
+    border: 1px solid $box-color;
+    box-shadow: 3px 3px 6px $box-color;
+}
+
+// ----------------------------------------------------- ICONS
+.icon {
+    color: $icon-color-first;
+    font-size: 22px;
+    transition: color 0.5s ease, font-size 0.3s ease;
+
+    &:hover {
+        color: $icon-color-second;
+        // font-size: 18px;
+    }
+}
+
+
+// ----------------------------------------------------- CHECKED TRUE
+
+.todo-completed {
+    text-decoration: line-through;
+    color: lightgrey;
+}
+
+// ----------------------------------------------------- CHECKBOX
+
+#customCheckbox:checked {
+    background-color: $icon-color-second;
+    border-color: $icon-color-second;
+}
+
+// ----------------------------------------------------- ALERT
+.alert-sm {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.alert-lg {
+    font-size: 18px;
+    padding: 20px 30px;
+}
