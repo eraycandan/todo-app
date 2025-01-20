@@ -1,3 +1,15 @@
+__* todo-app__
+
+<ul>
+  <li>react bootstrap</li>
+  <li>bootstrap icons</li>
+  <li>context API</li>
+</ul>
+
+_react-bootsrap kullanılarak context api state yönetimi yardımı ile todo app tasarımı hazırlandı_
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
